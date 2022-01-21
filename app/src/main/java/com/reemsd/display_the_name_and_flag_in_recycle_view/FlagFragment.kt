@@ -23,6 +23,7 @@ class FlagFragment : Fragment() {
         val binding = FragmentFlagBinding.inflate(inflater)
         binding.lifecycleOwner = this
         binding.countryViewModel = countryViewModel
+        binding.flagRv.adapter = CountryAdapter()
         return binding.root
     }
 
